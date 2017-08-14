@@ -13,7 +13,7 @@ public struct ANSI {
   
   var color: ANSIColor
   
-  init (color: ANSIColor) {
+  init (color: String) {
     switch color {
     case .black:
       self.color = ANSIColor.black.rawValue
