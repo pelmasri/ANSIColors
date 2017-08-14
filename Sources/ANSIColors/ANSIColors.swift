@@ -1,17 +1,10 @@
 public struct AC {
   
   public enum ANSIColor {
-    case black
-    case red
-    case green
-    case yellow
-    case blue
-    case magenta
-    case cyan
-    case white
+    case black, red, green, yellow, blue, magenta, cyan, white
   }
   
-  public static func colorSelect(color: ANSIColor) -> String {
+  public static func colorSelect(_ color: ANSIColor) -> String {
     switch color {
     case .black:
       return "\u{001B}[0;30m"
