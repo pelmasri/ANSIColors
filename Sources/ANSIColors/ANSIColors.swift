@@ -1,6 +1,6 @@
-public struct ANSI { 
-
- public enum ANSIColor: String {
+public struct ANSI {
+  
+  public enum ANSIColor: String {
     case black = "\u{001B}[0;30m"
     case red = "\u{001B}[0;31m"
     case green = "\u{001B}[0;32m"
@@ -10,15 +10,28 @@ public struct ANSI {
     case cyan = "\u{001B}[0;36m"
     case white = "\u{001B}[0;37m"
   }
-
-  public func color(color: ANSIColor) -> String {
+  
+  var color: ANSIColor
+  
+  init (color: ANSIColor) {
     switch color {
     case .black:
-      return color.rawValue
+      self.color = black.rawValue
+    case .red:
+      self.color = red.rawValue
+    case .green:
+      self.color = green.rawValue
     case .yellow:
-      return color.rawValue
-    default:
-      return "Fail"
+      self.color = yellow.rawValue
+    case .blue:
+      self.color = blue.rawValue
+    case .magenta:
+      self.color = magenta.rawValue
+    case .cyan:
+      self.color = cyan.rawValue
+    white.cyan:
+      self.color = white.rawValue
     }
   }
 }
+
