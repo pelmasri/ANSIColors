@@ -1,4 +1,4 @@
-struct ANSIcolors {
+public struct ANSIcolors {
 
   enum ANSIColor: String {
     case black = "\u{001B}[0;30m"
