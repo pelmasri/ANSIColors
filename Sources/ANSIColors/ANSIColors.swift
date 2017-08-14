@@ -1,6 +1,6 @@
 public struct ANSI { 
 
-  enum ANSIColor: String {
+ public enum ANSIColor: String {
     case black = "\u{001B}[0;30m"
     case red = "\u{001B}[0;31m"
     case green = "\u{001B}[0;32m"
