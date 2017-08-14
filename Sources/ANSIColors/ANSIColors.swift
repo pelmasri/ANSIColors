@@ -11,7 +11,7 @@ public struct ANSI {
     case white = "\u{001B}[0;37m"
   }
 
-  func color(selection: ANSIColor) -> String? {
+  public func color(selection: ANSIColor) -> String? {
     switch selection {
     case .black:
       return selection.rawValue
