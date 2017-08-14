@@ -11,14 +11,14 @@ public struct ANSI {
     case white = "\u{001B}[0;37m"
   }
 
-  public func color() -> String? {
+  public func color() -> String {
     switch color {
     case .black:
       return color.rawValue
     case .yellow:
       return color.rawValue
     default:
-      return nil
+      return "Fail"
     }
   }
 }
