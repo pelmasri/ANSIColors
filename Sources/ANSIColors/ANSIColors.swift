@@ -16,21 +16,21 @@ public struct ANSI {
   init (color: ANSIColor) {
     switch color {
     case .black:
-      self.color = black.rawValue
+      self.color = ANSIColor.black.rawValue
     case .red:
-      self.color = red.rawValue
+      self.color = ANSIColor.red.rawValue
     case .green:
-      self.color = green.rawValue
+      self.color = ANSIColor.green.rawValue
     case .yellow:
-      self.color = yellow.rawValue
+      self.color = ANSIColor.yellow.rawValue
     case .blue:
-      self.color = blue.rawValue
+      self.color = ANSIColor.blue.rawValue
     case .magenta:
-      self.color = magenta.rawValue
+      self.color = ANSIColor.magenta.rawValue
     case .cyan:
-      self.color = cyan.rawValue
-    white.cyan:
-      self.color = white.rawValue
+      self.color = ANSIColor.cyan.rawValue
+    case.white:
+      self.color = ANSIColor.white.rawValue
     }
   }
 }
