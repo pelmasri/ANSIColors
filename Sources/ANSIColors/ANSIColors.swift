@@ -11,28 +11,6 @@ public struct ANSI {
     case white = "\u{001B}[0;37m"
   }
   
-  var color: ANSIColor
-  
-  init (color: ANSIColor) {
-    switch color {
-    case .black:
-      self.color = color.rawValue
-    case .red:
-      self.color = color.rawValue
-    case .green:
-      self.color = color.rawValue
-    case .yellow:
-      self.color = color.rawValue
-    case .blue:
-      self.color = color.rawValue
-    case .magenta:
-      self.color = color.rawValue
-    case .cyan:
-      self.color = color.rawValue
-    case.white:
-      self.color = color.rawValue
-    }
-  }
-  
 }
 
+  
