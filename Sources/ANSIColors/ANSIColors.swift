@@ -1,4 +1,4 @@
-open struct SelectANSI {
+public struct SelectANSI {
   
   public enum ANSIColor: String {
     case black = "\u{001B}[0;30m"
