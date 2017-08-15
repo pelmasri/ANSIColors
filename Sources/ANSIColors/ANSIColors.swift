@@ -1,9 +1,4 @@
-public struct AC {
-  
-  public var color: ANSIColor
-  public init (color: ANSIColor) {
-    self.color = color
-  }
+public struct SelectANSI {
   
   public enum ANSIColor: String {
     case black = "\u{001B}[0;30m"
@@ -17,7 +12,7 @@ public struct AC {
     
   }
   
-  public func fontColorSelect() -> String {
+  public func fontColor(_ color: ANSIColor) -> String {
     return color.rawValue
   }
   
