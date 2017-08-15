@@ -12,7 +12,7 @@ public struct SelectANSI {
     
   }
   
-  public func color(_ color: ANSIColor) -> String {
+  public func color(color: ANSIColor) -> String {
     return color.rawValue
   }
   
