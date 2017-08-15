@@ -1,6 +1,5 @@
 public struct SelectANSI {
   
-
   public enum ANSIColor {
 	case named(ColorName)
   }
