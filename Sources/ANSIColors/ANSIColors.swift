@@ -5,7 +5,7 @@ public struct SelectANSI {
 	case named(ColorName)
   }
 
-  public extension ANSIColor {
+  extension ANSIColor {
 	enum ColorName: String {
     		case black = "\u{001B}[0;30m"
     		case red = "\u{001B}[0;31m"
@@ -20,7 +20,7 @@ public struct SelectANSI {
 
 
 
-  public extension ANSIColor: CustomStringConvertible {
+  extension ANSIColor: CustomStringConvertible {
 	var description: String {
 		switch self {
 			case .named(let colorName):
