@@ -15,15 +15,16 @@ public extension ANSIColor {
     	}
 }
 
-
-
-extension ANSIColor: CustomStringConvertible {
-	public var description: String {
-		switch self {
-			case .named(let colorName):
-				return colorName.rawValue
-	}
-	}
-}
+/*************************************************************************
+**									** 
+**	extension ANSIColor: CustomStringConvertible {			**
+**		public var description: String {			**
+**			switch self {					**
+**				case .named(let colorName):		**
+**					return colorName.rawValue	**
+**		}							**
+**		}							**
+**	}								**
+*************************************************************************/
 
 
