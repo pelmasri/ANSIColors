@@ -18,7 +18,7 @@ public extension ANSIColor {
 
 
 public extension ANSIColor: CustomStringConvertible {
-	public var description: String {
+	var description: String {
 		switch self {
 			case .named(let colorName):
 				return colorName.rawValue
