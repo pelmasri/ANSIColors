@@ -1,7 +1,7 @@
 public struct AC {
   
   public var color: ANSIColor
-  init (color: ANSIColor) {
+  public init (color: ANSIColor) {
     self.color = color
   }
   
