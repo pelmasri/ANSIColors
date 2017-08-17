@@ -14,6 +14,11 @@ public enum ANSIColor: CustomStringConvertible {
     case .white: return "\u{001B}[0;37m"
     }
   }
+
+ public func implement() {
+	print(self)
+ }
+
 }
 
 
